@@ -1,5 +1,5 @@
 /*
-Dumb dungeon rendering code for the arduboy, made by @bakagamedev on twitter. If you find any bugs, you can contact me there.
+Dumb dungeon rendering code for the arduboy, made by @bakagamedev on twitter. If you find any bugs, they are no longer his problem.
 Has no dependencies beyond the arduboy library itself and a compatible IDE.
 Licenced under wtfpl, http://www.wtfpl.net/about/
 
@@ -316,58 +316,54 @@ switch( mapstate ) { //changes things where the map goes
   ab.clear(); //clear screen
     drawMap();  //draw map
     drawView(); //draw perspective
-    
-    //draw camera angle indicator, for debugging.
-    //in here somewhere add the n s e w bit
-    
     break;
   case 1:
     //stats screen
     ab.clear(); //clear screen 
     ab.setCursor(1, curseloc);
-    ab.print("X"); //up to 10 charicters
+    ab.print("X"); //cursor to select stat to upgrade
     ab.setCursor(1, 0);
-    ab.print("upgrade"); //up to 10 charicters
+    ab.print("upgrade"); 
     ab.setCursor(11, 10);
-    ab.print("HP"); //up to 10 charicters
+    ab.print("HP"); 
     ab.setCursor(11, 20);
-    ab.print("STR"); //up to 10 charicters
+    ab.print("STR"); 
     ab.setCursor(11, 30);
-    ab.print("DEF"); //up to 10 charicters
+    ab.print("DEF"); 
     ab.setCursor(11, 40);
-    ab.print("LUCK"); //up to 10 charicters
+    ab.print("LUCK"); 
     ab.setCursor(40, 10);
-    ab.print(hpup); //up to 10 charicters
+    ab.print(hpup); 
     ab.setCursor(40, 20);
-    ab.print(strup); //up to 10 charicters
+    ab.print(strup); 
     ab.setCursor(40, 30);
-    ab.print(defup); //up to 10 charicters
+    ab.print(defup); 
     ab.setCursor(40, 40);
-    ab.print(luckup); //up to 10 charicters
+    ab.print(luckup); 
 
     ab.setCursor(65, 0);
-    ab.print(" stats"); //up to 10 charicters
+    ab.print(" stats"); 
     ab.setCursor(65, 10);
-    ab.print("HP"); //up to 10 charicters
+    ab.print("HP"); 
     ab.setCursor(65, 20);
-    ab.print("STR"); //up to 10 charicters
+    ab.print("STR"); 
     ab.setCursor(65, 30);
-    ab.print("DEF"); //up to 10 charicters
+    ab.print("DEF"); 
     ab.setCursor(65, 40);
-    ab.print("LUCK"); //up to 10 charicters
+    ab.print("LUCK"); 
     ab.setCursor(95, 10);
-    ab.print(hp); //up to 10 charicters
+    ab.print(hp); 
     ab.setCursor(95, 20);
-    ab.print(str); //up to 10 charicters
+    ab.print(str); 
     ab.setCursor(95, 30);
-    ab.print(def); //up to 10 charicters
+    ab.print(def); 
     ab.setCursor(95, 40);
-    ab.print(luck); //up to 10 charicters
+    ab.print(luck); 
 
     ab.setCursor(11, 50);
-    ab.print("lvls"); //up to 10 charicters
+    ab.print("lvls"); 
     ab.setCursor(50, 50);
-    ab.print(lvl); //up to 10 charicters
+    ab.print(lvl); 
     break;
   case 2:
     //inventory screen
